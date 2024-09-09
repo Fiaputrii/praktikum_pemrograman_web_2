@@ -8,6 +8,7 @@
 - [Jobsheet 3]<br>
 
 <h1> DESC OOP</h1>
+OOP (Object-Oriented Programming) adalah paradigma pemrograman yang berfokus pada penggunaan objek untuk mengatur dan mengelola kode. Dalam OOP, data dan fungsi yang memanipulasi data tersebut dikemas bersama dalam bentuk objek. Ini berbeda dari pemrograman prosedural yang lebih fokus pada sekumpulan instruksi yang diproses secara berurutan.
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
