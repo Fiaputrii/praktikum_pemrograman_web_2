@@ -78,7 +78,7 @@ public function getName() {
     }
 ```
 
-- Mmebuat class Teacher dan mewarisi Person
+- Membuat class Teacher dan mewarisi Person
 
 ```php
 class Teacher extends Person {
