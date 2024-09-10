@@ -1,5 +1,11 @@
 #  ✨ About Me ✨
 
+**Nama:** Alifia Putri Aditya
+
+**NPM:** 230302025
+
+**Kelas:** TI-2B
+
 📫 How to reach me **alifiaputriditya@gmail.com**
 
 <h2>Playlist:</h2>
