@@ -198,7 +198,7 @@ Atribut $merk dan $warna dideklarasikan sebagai private. Artinya, atribut-atribu
 2. Getter dan Setter:
 Untuk mengakses atau mengubah nilai dari properti private, kita membuat metode getter (getMerk()) dan setter (setMerk($merk)). Metode ini menyediakan kontrol atas bagaimana data diakses atau dimodifikasi. <br>
 
-<h3> What is Public </h3>
+<h3> What is Public? </h3>
 
 public function dalam pemrograman berorientasi objek (OOP) adalah metode (fungsi) yang dapat diakses dari mana saja, baik dari dalam kelas itu sendiri, dari kelas turunan, maupun dari luar kelas (dalam kode lain). Ini adalah kebalikan dari private, yang membatasi akses hanya di dalam kelas. <br>
 
@@ -220,4 +220,16 @@ return dalam pemrograman digunakan untuk mengembalikan nilai dari sebuah fungsi 
 __construct adalah sebuah konstruktor dalam OOP (Object-Oriented Programming) di PHP. Fungsi ini secara otomatis dipanggil setiap kali sebuah objek dari kelas dibuat (diinstansiasi). Konstruktor berguna untuk melakukan inisialisasi awal pada objek, seperti menetapkan nilai default untuk properti, atau mempersiapkan logika yang harus dijalankan pada awal objek dibuat.
 
 # Output object dan class
+![Cuplikan layar 2024-09-10 095833](https://github.com/user-attachments/assets/3f9f695f-abcd-44ab-af19-2ceba2dfe5e1)
 
+# Output Encapsulation
+![Cuplikan layar 2024-09-10 095846](https://github.com/user-attachments/assets/e506351f-3e6f-46b9-aefb-c348463480b8)
+
+# Output Inheritance
+![Cuplikan layar 2024-09-10 095858](https://github.com/user-attachments/assets/da78be95-8a88-493f-9705-fbda824d59af)
+
+# Output Polymorphism
+![Cuplikan layar 2024-09-10 095909](https://github.com/user-attachments/assets/fb725e49-e324-4426-825e-578105149f23)
+
+# Output Abstraction
+![Cuplikan layar 2024-09-10 095919](https://github.com/user-attachments/assets/af7746e8-dca6-44be-adaa-a8e4038da0a8)
