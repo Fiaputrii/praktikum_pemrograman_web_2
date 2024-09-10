@@ -127,7 +127,6 @@ $mahasiswa1->tampilkanData();
 Codingan ini menunjukkan cara untuk mengubah nim menggunakan setter
 
 # Output Class dan Object
-
 ![Cuplikan layar 2024-09-10 125853](https://github.com/user-attachments/assets/b8a39188-19ac-4040-9061-8e5e558bd9b4)
 
 
@@ -142,4 +141,6 @@ Codingan ini menunjukkan cara untuk mengubah nim menggunakan setter
 # Output Atribut dan Metode
 ![Cuplikan layar 2024-09-10 125930](https://github.com/user-attachments/assets/3315a5b4-23ab-4edd-bc7f-6cd133176122)
 
+
 # Output Tugas 
+![Cuplikan layar 2024-09-10 125944](https://github.com/user-attachments/assets/217a92cd-053e-415e-9a12-d63a94ca1afc)
