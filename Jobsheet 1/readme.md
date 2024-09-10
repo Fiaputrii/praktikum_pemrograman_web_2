@@ -243,6 +243,15 @@ public function __construct($nama, $nim, $jurusan) {
     }
 ```
 
+<h3> Fungsi Extends </h3>
+
+Kata kunci extends dalam pemrograman, termasuk dalam PHP, digunakan untuk mengimplementasikan konsep Inheritance (Pewarisan). Ketika suatu kelas menggunakan extends, itu berarti kelas tersebut mewarisi atau mengambil properti dan metode dari kelas induknya.
+
+```php
+class Dosen extends Pengguna {
+    private $mataKuliah;
+```
+
 # Output object dan class
 ![Cuplikan layar 2024-09-10 095833](https://github.com/user-attachments/assets/3f9f695f-abcd-44ab-af19-2ceba2dfe5e1)
 
