@@ -218,3 +218,6 @@ return dalam pemrograman digunakan untuk mengembalikan nilai dari sebuah fungsi 
 <h3> Fungsi Construct </h3>
 
 __construct adalah sebuah konstruktor dalam OOP (Object-Oriented Programming) di PHP. Fungsi ini secara otomatis dipanggil setiap kali sebuah objek dari kelas dibuat (diinstansiasi). Konstruktor berguna untuk melakukan inisialisasi awal pada objek, seperti menetapkan nilai default untuk properti, atau mempersiapkan logika yang harus dijalankan pada awal objek dibuat.
+
+# Output object dan class
+
