@@ -125,3 +125,9 @@ $mahasiswa1->tampilkanData();
 ?>
 ```
 Codingan ini menunjukkan cara untuk mengubah nim menggunakan setter
+
+# Output Class dan Object
+# Output Constructor
+# Output Metode Tambahan
+# Output Atribut dan Metode
+# Output Tugas 
