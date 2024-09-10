@@ -16,8 +16,12 @@ tersebut.
 - Private: Hanya dapat diakses dalam kelas itu sendiri.
 - Protected: Dapat diakses oleh kelas itu sendiri dan kelas turunan.
 
-<h2> Langkah langkah </h2>
+<h2> Penjabaran </h2>
 
+Pembuatan Class dan Atribut (menggunakan public)
+
+- Class menggunakan atribut public dikarenakan agar semua class bisa mengakses atribut tersebut
+  
 ```php
 // Membuat class Mahasiswa
 class Mahasiswa {
@@ -26,10 +30,10 @@ class Mahasiswa {
     public $nim;  
     public $jurusan;
 ```
-Codingan ini menunjukan pembuatan Class dan Atribut (menggunakan public)
 
-- Class menggunakan atribut public dikarenakan agar semua class bisa mengakses atribut tersebut
+Construct untuk menginisialisasi atribut
 
+- Construct (__construct()) adalah metode yang sangat berguna untuk menyiapkan keadaan awal sebuah objek pada saat pembuatannya, memastikan bahwa objek memiliki semua nilai atau kondisi yang diperlukan untuk berfungsi dengan benar
 
 ```php
 // Constructor untuk menginisialisasi atribut
@@ -39,9 +43,8 @@ Codingan ini menunjukan pembuatan Class dan Atribut (menggunakan public)
         $this->jurusan = $jurusan;
     }
 ```
-Codingan ini menunjukan construct untuk menginisialisasi atribut
 
-- Construct (__construct()) adalah metode yang sangat berguna untuk menyiapkan keadaan awal sebuah objek pada saat pembuatannya, memastikan bahwa objek memiliki semua nilai atau kondisi yang diperlukan untuk berfungsi dengan benar
+TampilkanData() sebagai metode untuk menampilkan data yang ada di output
 
 ```php
 // Metode untuk menampilkan data mahasiswa
@@ -51,7 +54,8 @@ Codingan ini menunjukan construct untuk menginisialisasi atribut
                "Jurusan: " . $this->jurusan . "<br>";
     }
 ```
-Codingan ini menunjukan tampilkanData() sebagai metode untuk menampilkan data
+
+Codingan ini menunjukan updateJurusan sebagai metode untuk mengubah data jurusan
 
 ```php
 // Metode untuk mengubah jurusan
@@ -59,7 +63,8 @@ Codingan ini menunjukan tampilkanData() sebagai metode untuk menampilkan data
         $this->jurusan = $jurusanBaru;
     }
 ```
-Codingan ini menunjukan updateJurusan sebagai metode untuk mengubah data jurusan
+
+Code yang menunjukan setNim untuk mengubah nim
 
 ```php
 // Metode setter untuk mengubah NIM
@@ -68,13 +73,13 @@ Codingan ini menunjukan updateJurusan sebagai metode untuk mengubah data jurusan
     }
 ```
 
-Codingan ini menunjukan setNim untuk mengubah nim
+Codingan ini menunjukan instansiasi objek dari mahasiswa
 
 ```php
-// Instansiasi objek dari class Mahasiswa dengan constructor
 $mahasiswa1 = new Mahasiswa("Karina", "3020291202", "Teknik Elektro");
 ```
-Codingan ini menunjukan instansiasi objek
+
+Codingan ini adalah step lengkap untuk memperbarui jurusan mengggunakan updateJurusan
 
 ```php
 // Metode untuk memperbarui jurusan mahasiswa
@@ -100,7 +105,8 @@ $mahasiswa1->tampilkanData();
 
 ?>
 ```
-Codingan di atas adalah cara untuk memperbarui jurusan mengggunakan updateJurusan
+
+Codingan ini menunjukkan step lengkap untuk mengubah nim menggunakan setter
 
 ```php
 // Metode setter untuk mengubah NIM
@@ -124,7 +130,6 @@ $mahasiswa1->tampilkanData();
 
 ?>
 ```
-Codingan ini menunjukkan cara untuk mengubah nim menggunakan setter
 
 # Output Class dan Object
 ![Cuplikan layar 2024-09-10 125853](https://github.com/user-attachments/assets/b8a39188-19ac-4040-9061-8e5e558bd9b4)
