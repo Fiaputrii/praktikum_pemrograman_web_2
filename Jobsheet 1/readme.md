@@ -13,8 +13,8 @@ class Laptop
 Objek adalah instansi dari sebuah kelas. Setiap objek dapat memiliki nilai atribut yang berbeda meskipun dibuat dari kelas yang sama.
 
 ```php
-laptop1 = Laptop("Macbook", "Grey")
-laptop1.info()  # Output: Laptop Macbook berwarna Grey
+$laptop1 = Laptop("Macbook", "Grey")
+$laptop1.info()  # Output: Laptop Macbook berwarna Grey
 ```
 
 <h3> Encapsulation </h3>
@@ -192,6 +192,11 @@ $anjing->bersuara(); // Output: Anjing Bulldog berkata: Guk Guk!
 
 private digunakan untuk menyembunyikan detail implementasi internal suatu objek dan memastikan data hanya dapat dimodifikasi dengan cara yang diizinkan oleh kelas tersebut. Ini dikenal sebagai enkapsulasi. <br>
 
+```php
+private $nim;
+private $nama;
+```
+
 1. Atribut Private:
 Atribut $merk dan $warna dideklarasikan sebagai private. Artinya, atribut-atribut ini hanya dapat diakses dari dalam kelas Mobil. Di luar kelas, kita tidak bisa mengaksesnya secara langsung. <br>
 
@@ -201,6 +206,11 @@ Untuk mengakses atau mengubah nilai dari properti private, kita membuat metode g
 <h3> What is Public? </h3>
 
 public function dalam pemrograman berorientasi objek (OOP) adalah metode (fungsi) yang dapat diakses dari mana saja, baik dari dalam kelas itu sendiri, dari kelas turunan, maupun dari luar kelas (dalam kode lain). Ini adalah kebalikan dari private, yang membatasi akses hanya di dalam kelas. <br>
+
+```php
+public $nama;
+public $nim;
+```
 
 1. Metode Public (public function):
 tampilkanInfo() dan ubahWarna() adalah contoh metode public. Keduanya dapat diakses dari luar kelas melalui objek $mobil1. <br>
@@ -215,9 +225,23 @@ Metode public memberikan fleksibilitas bagi kode di luar kelas untuk berinteraks
 
 return dalam pemrograman digunakan untuk mengembalikan nilai dari sebuah fungsi atau metode. Ketika sebuah fungsi dipanggil, ia bisa melakukan berbagai perhitungan atau operasi, dan hasil dari operasi tersebut bisa dikirim kembali ke pemanggil menggunakan return
 
+```php
+return "Nama Dosen : " . $this->nama . "<br>" .
+                "Nip: " . $this->nip . "<br>" .
+                "Mata Kuliah: " . $this->mataKuliah . "<br>";
+```
+
 <h3> Fungsi Construct </h3>
 
 __construct adalah sebuah konstruktor dalam OOP (Object-Oriented Programming) di PHP. Fungsi ini secara otomatis dipanggil setiap kali sebuah objek dari kelas dibuat (diinstansiasi). Konstruktor berguna untuk melakukan inisialisasi awal pada objek, seperti menetapkan nilai default untuk properti, atau mempersiapkan logika yang harus dijalankan pada awal objek dibuat.
+
+```php
+public function __construct($nama, $nim, $jurusan) {
+        $this->nama = $nama;
+        $this->nim = $nim;
+        $this->jurusan = $jurusan;
+    }
+```
 
 # Output object dan class
 ![Cuplikan layar 2024-09-10 095833](https://github.com/user-attachments/assets/3f9f695f-abcd-44ab-af19-2ceba2dfe5e1)
