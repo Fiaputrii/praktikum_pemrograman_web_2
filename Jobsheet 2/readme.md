@@ -28,6 +28,9 @@ class Mahasiswa {
 ```
 Codingan ini menunjukan pembuatan Class dan Atribut (menggunakan public)
 
+- Class menggunakan atribut public dikarenakan agar semua class bisa mengakses atribut tersebut
+
+
 ```php
 // Constructor untuk menginisialisasi atribut
     public function __construct($nama, $nim, $jurusan) {
@@ -37,6 +40,8 @@ Codingan ini menunjukan pembuatan Class dan Atribut (menggunakan public)
     }
 ```
 Codingan ini menunjukan construct untuk menginisialisasi atribut
+
+- Construct (__construct()) adalah metode yang sangat berguna untuk menyiapkan keadaan awal sebuah objek pada saat pembuatannya, memastikan bahwa objek memiliki semua nilai atau kondisi yang diperlukan untuk berfungsi dengan benar
 
 ```php
 // Metode untuk menampilkan data mahasiswa
@@ -72,3 +77,51 @@ $mahasiswa1 = new Mahasiswa("Karina", "3020291202", "Teknik Elektro");
 Codingan ini menunjukan instansiasi objek
 
 ```php
+// Metode untuk memperbarui jurusan mahasiswa
+    public function updateJurusan($jurusanBaru) {
+        $this->jurusan = $jurusanBaru;
+        echo "Jurusan telah diperbarui menjadi: " . $this->jurusan . "<br>";
+    }
+}
+
+// Instansiasi objek dari class Mahasiswa
+$mahasiswa1 = new Mahasiswa("Karina", "230202071", "Teknik elektro");
+
+// Menampilkan data mahasiswa sebelum update jurusan
+echo "Data sebelum update jurusan:<br>";
+$mahasiswa1->tampilkanData();
+
+// Mengubah jurusan menggunakan metode updateJurusan()
+$mahasiswa1->updateJurusan("Teknik Mesin");
+
+// Menampilkan data mahasiswa setelah update jurusan
+echo "<br>Data setelah update jurusan:<br>";
+$mahasiswa1->tampilkanData();
+
+?>
+```
+Codingan di atas adalah cara untuk memperbarui jurusan mengggunakan updateJurusan
+
+```php
+// Metode setter untuk mengubah NIM
+    public function setNim($nimBaru) {
+        $this->nim = $nimBaru;
+        echo "NIM berhasil diperbarui menjadi:  " . $this->nim . "<br>";
+    }
+}
+
+// Instansiasi objek dari class Mahasiswa
+$mahasiswa1 = new Mahasiswa("Karina", "230202071", "Sistem Informasi");
+
+// Menampilkan data mahasiswa sebelum perubahan NIM
+$mahasiswa1->tampilkanData();
+
+// Mengubah NIM mahasiswa menggunakan metode setNim()
+$mahasiswa1->setNim("230301201");
+
+// Menampilkan data mahasiswa setelah perubahan NIM
+$mahasiswa1->tampilkanData();
+
+?>
+```
+Codingan ini menunjukkan cara untuk mengubah nim menggunakan setter
