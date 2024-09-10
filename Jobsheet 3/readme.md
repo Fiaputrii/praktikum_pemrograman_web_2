@@ -279,3 +279,19 @@ $offlineCourse = new OfflineCourse("Science");
 echo $onlineCourse->getCourseDetails() . "<br>";
 echo $offlineCourse->getCourseDetails() . "<br>";
 ```
+
+<h2> Tugas </h2>
+
+- Membuat Class, Atribut dan menambahkan construct untuk menginisialisasi (name)
+
+```
+class Person {
+    protected $name;
+
+    public function __construct($name) {
+        $this->name = $name;
+    }
+```
+
+- 
+
