@@ -11,7 +11,7 @@
 <h2>Daftar:</h2>
 
 <li><a href="Jobsheet 1">Jobsheet 1</a></li>
-<li><a href="">Jobsheet 2</a></li>
+<li><a href="Jobsheet 2">Jobsheet 2</a></li>
 <li><a href="">Jobsheet 3</a></li>
 
 <h1> DESC OOP</h1>
