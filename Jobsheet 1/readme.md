@@ -3,7 +3,7 @@
 
 Kelas (Class): Kelas adalah cetak biru atau template yang digunakan untuk membuat objek. 
 Kelas mendefinisikan atribut (properti) dan metode (fungsi) yang dimiliki oleh objek yang dibuat dari kelas tersebut.
-### Contoh :
+####  Contoh :
  
 ```php
 class Laptop
