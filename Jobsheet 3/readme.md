@@ -141,71 +141,61 @@ echo $teacher1->getName() . "<br>";
 class Student {
 ```
 
-- Mengubah atribut name dan studentID menjadi private
+- Merubah Atribut Name dan StudentID menjadi private
 
 ```php
 private $name;
-    private $studentID;
+private $studentID;
 ```
 
-- Menambahkan construct untuk menginisialisasi name dan studentID
-
-```php
-public function __construct($name, $studentID) {
-        $this->name = $name;
-        $this->studentID = $studentID;
-    }
-```
-
-- Membuat setter dan getter untuk name (Metode ini digunakan untuk mengatur (setter) dan mengambil (getter) nilai dari atribut private atau protected dalam sebuah kelas)
+- Metode setter untuk menetapkan nama
 
 ```php
 public function setName($name) {
         $this->name = $name;
     }
+```
 
-    public function getName() {
-        return "Student: " . $this->name;
+- Metode getter untuk mendapatkan nama
+
+```php
+public function getName() {
+        return $this->name;
     }
 ```
 
-- Membuat setter dan getter untuk studentID ( Metode ini digunakan untuk mengatur (setter) dan mengambil (getter) nilai dari atribut private atau protected dalam sebuah kelas)
+- Metode setter untuk menetapkan studentID
 
 ```php
 public function setStudentID($studentID) {
         $this->studentID = $studentID;
     }
+```
 
-    public function getStudentID() {
-        return "Student ID: " . $this->studentID;
+- Metode getter untuk mendapatkan studentID
+
+```php
+public function getStudentID() {
+        return $this->studentID;
     }
 ```
 
-- Membuat objek
+- Memuat Objek
+
 
 ```php
-$student1 = new Student("Minju", "230302002");
+$student1 = new Student();
+
+$student1->setName("Devia Herena");
+$student1->setStudentID("230302051");
 ```
 
-- Menampilkan data sebelum ubah
+- Menampilkan data
 
 ```php
-echo $student1->getName() . "<br>";
-echo $student1->getStudentID() . "<br>";
-```
-
-- Mengubah data menggunakan set
-
-```php
-$student1->setName("Winter");
-$student1->setStudentID("230301003");
-```
-
-- Menampilkan data setelah di set atau diubah
-
-```php
-echo $student1->getName() . "<br>";
-echo $student1->getStudentID() . "<br>";
+echo "Nama: " . $student1->getName() . "<br>";
+echo "Student ID: " . $student1->getStudentID() . "<br>";
+?>
 ```
 
 <h3> Output Encapsulation </h3>
