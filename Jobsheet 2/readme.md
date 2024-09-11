@@ -18,7 +18,7 @@ tersebut.
 
 <h2> Penjabaran </h2>
 
-Pembuatan Class dan Atribut (menggunakan public)
+### 1. Pembuatan Class dan Atribut (menggunakan public)
 
 - Class menggunakan atribut public dikarenakan agar semua class bisa mengakses atribut tersebut
   
@@ -31,7 +31,7 @@ class Mahasiswa {
     public $jurusan;
 ```
 
-Construct untuk menginisialisasi atribut
+### 2. Construct untuk menginisialisasi atribut
 
 - Construct (__construct()) adalah metode yang sangat berguna untuk menyiapkan keadaan awal sebuah objek pada saat pembuatannya, memastikan bahwa objek memiliki semua nilai atau kondisi yang diperlukan untuk berfungsi dengan benar
 
@@ -44,7 +44,7 @@ Construct untuk menginisialisasi atribut
     }
 ```
 
-TampilkanData() sebagai metode untuk menampilkan data yang ada di output
+### 3. TampilkanData() sebagai metode untuk menampilkan data yang ada di output
 
 ```php
 // Metode untuk menampilkan data mahasiswa
@@ -55,7 +55,7 @@ TampilkanData() sebagai metode untuk menampilkan data yang ada di output
     }
 ```
 
-Codingan ini menunjukan updateJurusan sebagai metode untuk mengubah data jurusan
+### 4. Codingan ini menunjukan updateJurusan sebagai metode untuk mengubah data jurusan
 
 ```php
 // Metode untuk mengubah jurusan
@@ -64,7 +64,7 @@ Codingan ini menunjukan updateJurusan sebagai metode untuk mengubah data jurusan
     }
 ```
 
-Code yang menunjukan setNim untuk mengubah nim
+### 4. Code yang menunjukan setNim untuk mengubah nim
 
 ```php
 // Metode setter untuk mengubah NIM
@@ -73,13 +73,13 @@ Code yang menunjukan setNim untuk mengubah nim
     }
 ```
 
-Codingan ini menunjukan instansiasi objek dari mahasiswa
+### 5. Codingan ini menunjukan instansiasi objek dari mahasiswa
 
 ```php
 $mahasiswa1 = new Mahasiswa("Karina", "3020291202", "Teknik Elektro");
 ```
 
-Codingan ini adalah step lengkap untuk memperbarui jurusan mengggunakan updateJurusan
+### 6. Codingan ini adalah step lengkap untuk memperbarui jurusan mengggunakan updateJurusan
 
 ```php
 // Metode untuk memperbarui jurusan mahasiswa
@@ -106,7 +106,7 @@ $mahasiswa1->tampilkanData();
 ?>
 ```
 
-Codingan ini menunjukkan step lengkap untuk mengubah nim menggunakan setter
+### 7. Codingan ini menunjukkan step lengkap untuk mengubah nim menggunakan setter
 
 ```php
 // Metode setter untuk mengubah NIM
