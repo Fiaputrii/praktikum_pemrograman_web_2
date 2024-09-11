@@ -470,6 +470,6 @@ $jurnalMahasiswa = new JurnalMahasiswa("Hukum Newton", $mahasiswa->getNim());
 echo $jurnalMahasiswa->submitJurnal() . "<br>";
 ```
 
-# Output Tugas 3
+<h3> Output Tugas 3 </h3>
 
 ![Cuplikan layar 2024-09-11 104639](https://github.com/user-attachments/assets/461b3dec-00ab-4046-a14f-d443008b1b19)
