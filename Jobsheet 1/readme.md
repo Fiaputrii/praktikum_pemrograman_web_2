@@ -19,10 +19,10 @@ $laptop1 = Laptop("Macbook", "Grey")
 $laptop1.info()  # Output: Laptop Macbook berwarna Grey
 ```
 
-<h3> Encapsulation </h3>
+<h2> Encapsulation </h2>
 
 Enkapsulasi adalah konsep menyembunyikan data internal sebuah objek dan hanya memperbolehkan modifikasi melalui metode tertentu. Ini membantu melindungi data agar tidak diakses langsung dari luar objek.
-### Contoh:
+#### Contoh:
 
 ```php
 <?php
@@ -61,10 +61,10 @@ $laptop1->tampilkanInfo(); // Output: Laptop Hp berwarna Grey.
 ?>
 ```
 
-<h3> Inheritance </h3>
+<h2> Inheritance </h2>
 
 Pewarisan (Inheritance) memungkinkan sebuah kelas baru (kelas turunan) untuk mewarisi sifat-sifat dari kelas yang sudah ada (kelas induk). Kelas turunan dapat menambahkan fitur baru atau mengganti fitur dari kelas induk.
-### Contoh:
+#### Contoh:
 
 ```php
 <?php
@@ -98,7 +98,7 @@ echo $buku1->getNama(); //Output Pemrograman PHP
 ?>
 ```
 
-<h3> Polymorphism </h3>
+<h2> Polymorphism </h2>
 
 Polimorfisme (Polymorphism) memungkinkan objek untuk mengambil banyak bentuk. Ini berarti bahwa metode yang sama dapat memiliki perilaku yang berbeda tergantung pada objek yang memanggilnya.
 ### Contoh:
@@ -137,11 +137,11 @@ buatHewanBersuara($anjing); // Output: Guk Guk!
 ?>
 ```
 
-<h3> Abstract </h3>
+<h2> Abstract </h2>
 
 Abstraksi adalah konsep menyembunyikan kompleksitas dari cara kerja internal dan hanya menampilkan fitur penting.
 Ini memudahkan pengembang fokus pada apa yang dilakukan objek tanpa harus memahami bagaimana ia melakukannya.
-### Contoh: 
+#### Contoh: 
 
 ```php
 <?php
