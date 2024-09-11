@@ -1,5 +1,5 @@
 # Jobsheet 1
-<h3> Class </h3>
+<h2> Class </h2>
 
 Kelas (Class): Kelas adalah cetak biru atau template yang digunakan untuk membuat objek. 
 Kelas mendefinisikan atribut (properti) dan metode (fungsi) yang dimiliki oleh objek yang dibuat dari kelas tersebut.
@@ -9,10 +9,10 @@ Kelas mendefinisikan atribut (properti) dan metode (fungsi) yang dimiliki oleh o
 class Laptop
 ```
 
-<h3> Object </h3>
+<h2> Object </h2>
 
 Objek adalah instansi dari sebuah kelas. Setiap objek dapat memiliki nilai atribut yang berbeda meskipun dibuat dari kelas yang sama.
-### Contoh:
+#### Contoh:
 
 ```php
 $laptop1 = Laptop("Macbook", "Grey")
