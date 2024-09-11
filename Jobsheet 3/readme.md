@@ -282,5 +282,173 @@ echo $offlineCourse->getCourseDetails() . "<br>";
 
 <h2> Tugas </h2>
 
-- Membuat Class, Atribut dan menambahkan construct untuk menginisialisasi (name)
+- Membuat Class, Atribut (protected) dan menambahkan construct untuk menginisialisasi (name)
 
+```php
+class Person {
+    protected $name;
+
+    public function __construct($name) {
+        $this->name = $name;
+    }
+```
+
+- Membuat public function menggunakan metode polymorphism getRole()
+
+```php
+// Metode Polymorphism getRole()
+    public function getRole() {
+        return "Person";
+    }
+```
+
+- Membuat fungsi getName
+
+```php
+public function getName() {
+        return $this->name;
+    }
+```
+
+- Membuat class Dosen dan subclass (Person)
+
+```php
+class Dosen extends Person {
+```
+
+- Membuat Atribut nidn dan membuat public function name, nidn
+
+```php
+private $nidn;
+
+    public function __construct($name, $nidn) {
+        parent::__construct($name);
+        $this->nidn = $nidn;
+    }
+```
+
+- Override metode getRole
+
+```php
+public function getRole() {
+        return "Dosen";
+    }
+```
+
+- Membuat setter dan getter untuk nidn
+
+```php
+// Getter dan Setter untuk NIDN (Encapsulation)
+    public function getNidn() {
+        return $this->nidn;
+    }
+
+    public function setNidn($nidn) {
+        $this->nidn = $nidn;
+    }
+```
+
+- Class Mahasiswa juga memiliki langkah  yang sama dengan Class Dosen
+
+```php
+class Mahasiswa extends Person {
+    private $nim;
+
+    public function __construct($name, $nim) {
+        parent::__construct($name);
+        $this->nim = $nim;
+    }
+
+    // Override metode getRole untuk Polymorphism
+    public function getRole() {
+        return "Mahasiswa";
+    }
+
+    // Getter dan Setter untuk NIM (Encapsulation)
+    public function getNim() {
+        return $this->nim;
+    }
+
+    public function setNim($nim) {
+        $this->nim = $nim;
+    }
+```
+
+- Membuat class abstract Jurnal , Atribut 
+
+```php
+abstract class Jurnal {
+    protected $title;
+```
+
+- Membuat public function untuk atribut title
+
+```php
+public function __construct($title) {
+        $this->title = $title;
+    }
+```
+
+- Membuat metode abstrak untuk submitJurnal
+
+```php
+abstract public function submitJurnal();
+```
+
+- Membuat class JurnalDosen yang diwarisi dari class Jurnal
+
+```php
+class JurnalDosen extends Jurnal {
+```
+
+- Membuat Atribut dan fungsi construct untuk title, dan nidn
+
+```php
+private $nidn;
+
+    public function __construct($title, $nidn) {
+        parent::__construct($title);
+        $this->nidn = $nidn;
+    }
+```
+
+- Implementasi metode submitJurnal
+
+```php
+public function submitJurnal() {
+        return "Jurnal dengan judul '$this->title' telah diterima oleh Dosen dengan NIDN $this->nidn.";
+    }
+```
+
+- Membuat class JurnalMahasiswa dan langkah langkah nya sama dengan class JurnalDosen
+
+```php
+class JurnalMahasiswa extends Jurnal {
+    private $nim;
+
+    public function __construct($title, $nim) {
+        parent::__construct($title);
+        $this->nim = $nim;
+    }
+
+    // Implementasi metode submitJurnal
+    public function submitJurnal() {
+        return "Jurnal dengan judul '$this->title' telah diterima oleh Mahasiswa dengan NIM $this->nim. ";
+    }
+```
+
+- Contoh Pengguna
+
+```php
+$dosen = new Dosen("Bpk Sutrisno", "202101022");
+echo $dosen->getName() . " adalah seorang " . $dosen->getRole() . " dengan NIDN  " . $dosen->getNidn() . "<br>";
+
+$mahasiswa = new Mahasiswa("Ferina", "230301031");
+echo $mahasiswa->getName() . " adalah seorang " . $mahasiswa->getRole() . " dengan NIM " . $mahasiswa->getNim() . "<br>";
+
+$jurnalDosen = new JurnalDosen("Matematika Diskrit", $dosen->getNidn());
+echo $jurnalDosen->submitJurnal() . "<br>";
+
+$jurnalMahasiswa = new JurnalMahasiswa("Hukum Newton", $mahasiswa->getNim());
+echo $jurnalMahasiswa->submitJurnal() . "<br>";
+```
