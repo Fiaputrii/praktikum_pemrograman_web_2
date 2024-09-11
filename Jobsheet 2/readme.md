@@ -44,7 +44,9 @@ class Mahasiswa {
     }
 ```
 
-### 3. TampilkanData() sebagai metode untuk menampilkan data yang ada di output
+### 3. TampilkanData() 
+
+- Tampilkandata() sebagai metode untuk menampilkan data yang sudah di masukkan lalu keluar di output
 
 ```php
 // Metode untuk menampilkan data mahasiswa
@@ -55,7 +57,9 @@ class Mahasiswa {
     }
 ```
 
-### 4. Codingan ini menunjukan updateJurusan sebagai metode untuk mengubah data jurusan
+### 4. updateJurusan 
+
+- Metode updateJurusan sebagai metode untuk mengubah data jurusan
 
 ```php
 // Metode untuk mengubah jurusan
@@ -64,7 +68,9 @@ class Mahasiswa {
     }
 ```
 
-### 4. Code yang menunjukan setNim untuk mengubah nim
+### 4. setNim
+
+- Code ini untuk mengubah data atau menyeting data
 
 ```php
 // Metode setter untuk mengubah NIM
