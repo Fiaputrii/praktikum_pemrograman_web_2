@@ -4,25 +4,19 @@
 
 - Pembuatan Class dan Atribut
 ```php
-<?php
-// Kelas Person 
 class Person {
     public $name;
-
-    public function __construct($name) {
-        $this->name = $name;
-    }
 ```
 
 - Membuat fungsi getName
 
 ```php
-public function getName() {
+ public function getName() {
         return "Nama: " . $this->name;
     }
 ```
 
-- Kelas student yang mewarisi kelas person
+- Membuat class student yang mewarisi kelas person
 
 ```php
 class Student extends Person {
@@ -34,25 +28,26 @@ class Student extends Person {
 public $studentID;
 ```
 
-- Membuat construct untuk menginisialisasi name, studentID
-
-```php
-public function __construct($name, $studentID) {
-        parent::__construct($name); 
-        $this->studentID = $studentID;
-```
-
-- Mengambil nila dari atribut di objek menggunakan fungsi getStudent
+- Mengambil nilai dari atribut di objek menggunakan fungsi getStudent
+  
 ```php
 public function getStudentID() {
         return "Student ID: " . $this->studentID;
     }
 ```
 
-- Membuat sebuah objek dari kelas Student dan kemudian memanggil metode dari objek tersebut.
+- Membuat sebuah objek dari kelas Student
 
 ```php
-$student1 = new Student("Devia Herena", "230302051");
+$student1 = new Student();
+
+$student1->name = "Devia Herena";
+$student1->studentID = "230302051";
+```
+
+- Menampilkan data
+
+```php
 echo $student1->getName() . "<br>";
 echo $student1->getStudentID() . "<br>";
 ```
@@ -69,10 +64,6 @@ echo $student1->getStudentID() . "<br>";
 ```php
 class Person {
     public $name;
-
-    public function __construct($name) {
-        $this->name = $name;
-    }
 ```
 
 - Membuat fungsi getName
@@ -86,64 +77,52 @@ public function getName() {
 - Membuat class Teacher dan mewarisi Person
 
 ```php
+class Student extends Person {
+```
+
+- Override public function getName
+
+```php
+public function getName() {
+        return "Nama Mahasiswa: " . $this->name;
+    }
+```
+
+- Membuat class Teacher 
+
+```php
 class Teacher extends Person {
 ```
 
-- Membuat atribut baru bernama teacherID
+- Menambahkan atribut teacherID di class teacher
 
 ```php
 public $teacherID;
 ```
 
-- Membuat construct untuk menginisialisasi name, teacherID
-
-```php
-public function __construct($name, $teacherID) {
-        parent::__construct($name);
-        $this->teacherID = $teacherID;
-    }
-```
-
-- Override class teacher untuk format berbeda
+- Override class Teacher untuk format yang berbeda
 
 ```php
 public function getName() {
-        return "Teacher: " . $this->name;
+        return "Nama Dosen: " . $this->name;
     }
 ```
 
-- Membuat class Student yang mewarisi Person dan membuat atribut
+- Instansiasi objek dari class student
 
 ```php
-class Student extends Person {
-    public $studentID;
+$student1 = new Student();
+$student1->name = "Ferina Sheren";
 ```
 
-- Membuat construct untuk menginisialisasi name, student
+- Instansiasi objek dari class Teacher
 
 ```php
-public function __construct($name, $studentID) {
-        parent::__construct($name);
-        $this->studentID = $studentID;
-    }
+$teacher1 = new Teacher();
+$teacher1->name = "Bpk Faisal";
 ```
 
-- Override class Student untuk format yang berbeda
-
-```php
-public function getName() {
-        return "Student: " . $this->name;
-    }
-```
-
-- Membuat objek lalu memanggil
-
-```php
-$student1 = new Student("Winter", "230301270");
-$teacher1 = new Teacher("Ny. Karina", "230302320");
-```
-
-- Menampilkan nama dari objek Student dan Teacher
+- Menampilkan data
 
 ```php
 echo $student1->getName() . "<br>";
