@@ -3,6 +3,7 @@
 
 Kelas (Class): Kelas adalah cetak biru atau template yang digunakan untuk membuat objek. 
 Kelas mendefinisikan atribut (properti) dan metode (fungsi) yang dimiliki oleh objek yang dibuat dari kelas tersebut.
+### Contoh :
  
 ```php
 class Laptop
@@ -11,6 +12,7 @@ class Laptop
 <h3> Object </h3>
 
 Objek adalah instansi dari sebuah kelas. Setiap objek dapat memiliki nilai atribut yang berbeda meskipun dibuat dari kelas yang sama.
+### Contoh:
 
 ```php
 $laptop1 = Laptop("Macbook", "Grey")
@@ -20,6 +22,7 @@ $laptop1.info()  # Output: Laptop Macbook berwarna Grey
 <h3> Encapsulation </h3>
 
 Enkapsulasi adalah konsep menyembunyikan data internal sebuah objek dan hanya memperbolehkan modifikasi melalui metode tertentu. Ini membantu melindungi data agar tidak diakses langsung dari luar objek.
+### Contoh:
 
 ```php
 <?php
@@ -61,6 +64,7 @@ $laptop1->tampilkanInfo(); // Output: Laptop Hp berwarna Grey.
 <h3> Inheritance </h3>
 
 Pewarisan (Inheritance) memungkinkan sebuah kelas baru (kelas turunan) untuk mewarisi sifat-sifat dari kelas yang sudah ada (kelas induk). Kelas turunan dapat menambahkan fitur baru atau mengganti fitur dari kelas induk.
+### Contoh:
 
 ```php
 <?php
@@ -97,6 +101,7 @@ echo $buku1->getNama(); //Output Pemrograman PHP
 <h3> Polymorphism </h3>
 
 Polimorfisme (Polymorphism) memungkinkan objek untuk mengambil banyak bentuk. Ini berarti bahwa metode yang sama dapat memiliki perilaku yang berbeda tergantung pada objek yang memanggilnya.
+### Contoh:
 
 ```php
 <?php
@@ -136,6 +141,7 @@ buatHewanBersuara($anjing); // Output: Guk Guk!
 
 Abstraksi adalah konsep menyembunyikan kompleksitas dari cara kerja internal dan hanya menampilkan fitur penting.
 Ini memudahkan pengembang fokus pada apa yang dilakukan objek tanpa harus memahami bagaimana ia melakukannya.
+### Contoh: 
 
 ```php
 <?php
