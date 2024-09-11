@@ -259,16 +259,21 @@ class Dosen extends Pengguna {
 ```
 
 # Output object dan class
-![Cuplikan layar 2024-09-10 095833](https://github.com/user-attachments/assets/3f9f695f-abcd-44ab-af19-2ceba2dfe5e1)
+
+![Cuplikan layar 2024-09-11 213323](https://github.com/user-attachments/assets/1fa7d419-fee7-47ea-b9a0-75f15b69d304)
 
 # Output Encapsulation
-![Cuplikan layar 2024-09-10 095846](https://github.com/user-attachments/assets/e506351f-3e6f-46b9-aefb-c348463480b8)
+
+![Cuplikan layar 2024-09-11 213334](https://github.com/user-attachments/assets/7161d5e2-3d57-4624-a845-54a205aee8f1)
 
 # Output Inheritance
-![Cuplikan layar 2024-09-10 095858](https://github.com/user-attachments/assets/da78be95-8a88-493f-9705-fbda824d59af)
+
+![Cuplikan layar 2024-09-11 213304](https://github.com/user-attachments/assets/d588a34e-bd64-41f5-82a1-631e5c40a863)
 
 # Output Polymorphism
-![Cuplikan layar 2024-09-10 095909](https://github.com/user-attachments/assets/fb725e49-e324-4426-825e-578105149f23)
+
+![Cuplikan layar 2024-09-11 213343](https://github.com/user-attachments/assets/de5abaea-f0ef-4f76-9f8c-a07e9f131b7e)
 
 # Output Abstraction
-![Cuplikan layar 2024-09-10 095919](https://github.com/user-attachments/assets/af7746e8-dca6-44be-adaa-a8e4038da0a8)
+
+![Cuplikan layar 2024-09-11 213314](https://github.com/user-attachments/assets/8a53a2f7-156c-4331-b11d-baca3e0adb3d)
