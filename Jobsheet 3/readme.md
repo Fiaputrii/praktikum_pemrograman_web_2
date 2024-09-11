@@ -54,8 +54,7 @@ echo $student1->getStudentID() . "<br>";
 
 <h3> Output inheritance </h3>
 
-![Cuplikan layar 2024-09-11 125443](https://github.com/user-attachments/assets/644404cd-c3dd-43be-9bab-06689b07acb8)
-
+![Cuplikan layar 2024-09-11 232751](https://github.com/user-attachments/assets/6a4953b3-f404-487a-ba8b-01442791e1cf)
 
 <h2> Polymorphism </h2>
 
@@ -131,7 +130,7 @@ echo $teacher1->getName() . "<br>";
 
 <h3> Output Polymorphism </h3>
 
-![Cuplikan layar 2024-09-11 125501](https://github.com/user-attachments/assets/e2b87d36-f025-4b28-9e04-c736b41df43e)
+![Cuplikan layar 2024-09-11 232802](https://github.com/user-attachments/assets/dfddc923-58ff-4ae7-a605-b374990ac35f)
 
 <h2> Encapsulation </h2>
 
@@ -213,7 +212,7 @@ echo "Student ID: " . $student1->getStudentID() . "<br>";
 
 <h3> Output Encapsulation </h3>
 
-![Cuplikan layar 2024-09-11 125430](https://github.com/user-attachments/assets/7b477a48-5892-46f0-bf5a-fa6b714eeedf)
+![Cuplikan layar 2024-09-11 232812](https://github.com/user-attachments/assets/0c7491d4-7752-4bdf-9766-e024e2310096)
 
 <h2> Abstraction </h2>
 
@@ -279,8 +278,9 @@ $offlineCourse->setCourseDetails("Fisika", "Cafe");
 
 <h3> Output Abstraction </h3>
 
-![Cuplikan layar 2024-09-11 125404](https://github.com/user-attachments/assets/5c927c07-2d87-4d56-a45b-099d7a394334)
+![Cuplikan layar 2024-09-11 232825](https://gith
 
+ub.com/user-attachments/assets/918d7233-06dd-40c7-a2cf-b5abce8f892f)
 <h2> Tugas </h2>
 
 - Membuat Class, Atribut (protected) dan menambahkan construct untuk menginisialisasi (name)
