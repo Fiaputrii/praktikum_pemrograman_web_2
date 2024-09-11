@@ -180,8 +180,7 @@ public function getStudentID() {
     }
 ```
 
-- Memuat Objek
-
+- Membuat Objek
 
 ```php
 $student1 = new Student();
@@ -190,12 +189,26 @@ $student1->setName("Devia Herena");
 $student1->setStudentID("230302051");
 ```
 
-- Menampilkan data
+- Menampilkan data sebelum di ubah
 
 ```php
 echo "Nama: " . $student1->getName() . "<br>";
 echo "Student ID: " . $student1->getStudentID() . "<br>";
 ?>
+```
+- Mengubah nilai atribut
+
+```php
+$student1->setName("Pamungkas");
+$student1->setStudentID("320202452");
+```
+
+- Menampilkan data
+
+```php
+echo "<br>Data mahasiswa setelah perubahan:<br>";
+echo "Nama: " . $student1->getName() . "<br>";
+echo "Student ID: " . $student1->getStudentID() . "<br>";
 ```
 
 <h3> Output Encapsulation </h3>
