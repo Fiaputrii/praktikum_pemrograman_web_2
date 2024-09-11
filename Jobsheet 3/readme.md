@@ -57,6 +57,11 @@ echo $student1->getName() . "<br>";
 echo $student1->getStudentID() . "<br>";
 ```
 
+<h3> Output inheritance </h3>
+
+![Cuplikan layar 2024-09-11 125443](https://github.com/user-attachments/assets/644404cd-c3dd-43be-9bab-06689b07acb8)
+
+
 <h2> Polymorphism </h2>
 
 - Membuat Class dan Atribut
@@ -90,7 +95,7 @@ class Teacher extends Person {
 public $teacherID;
 ```
 
-- Mmebuat construct untuk menginisialisasi name, teacherID
+- Membuat construct untuk menginisialisasi name, teacherID
 
 ```php
 public function __construct($name, $teacherID) {
@@ -144,6 +149,10 @@ $teacher1 = new Teacher("Ny. Karina", "230302320");
 echo $student1->getName() . "<br>";
 echo $teacher1->getName() . "<br>";
 ```
+
+<h3> Output Polymorphism </h3>
+
+![Cuplikan layar 2024-09-11 125501](https://github.com/user-attachments/assets/e2b87d36-f025-4b28-9e04-c736b41df43e)
 
 <h2> Encapsulation </h2>
 
@@ -220,6 +229,10 @@ echo $student1->getName() . "<br>";
 echo $student1->getStudentID() . "<br>";
 ```
 
+<h3> Output Encapsulation </h3>
+
+![Cuplikan layar 2024-09-11 125430](https://github.com/user-attachments/assets/7b477a48-5892-46f0-bf5a-fa6b714eeedf)
+
 <h2> Abstraction </h2>
 
 - Membuat class abstract
@@ -279,6 +292,10 @@ $offlineCourse = new OfflineCourse("Science");
 echo $onlineCourse->getCourseDetails() . "<br>";
 echo $offlineCourse->getCourseDetails() . "<br>";
 ```
+
+<h3> Output Abstraction </h3>
+
+![Cuplikan layar 2024-09-11 125404](https://github.com/user-attachments/assets/5c927c07-2d87-4d56-a45b-099d7a394334)
 
 <h2> Tugas </h2>
 
