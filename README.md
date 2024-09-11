@@ -9,9 +9,9 @@
 📫 How to reach me **alifiaputriditya@gmail.com**
 
 <h2>Playlist:</h2>
-- [Jobsheet 1] https://github.com/Fiaputrii/praktikum_pemrograman_web_2/tree/main/Jobsheet%201 <br>
-- [Jobsheet 2]<br>
-- [Jobsheet 3]<br>
+-  <li><a href="">Jobsheet 1</a></li>
+-  <li><a href="">Jobsheet 2</a></li>
+-  <li><a href="">Jobsheet 3</a></li>
 
 <h1> DESC OOP</h1>
 OOP (Object-Oriented Programming) adalah paradigma pemrograman yang berfokus pada penggunaan objek untuk mengatur dan mengelola kode. Dalam OOP, data dan fungsi yang memanipulasi data tersebut dikemas bersama dalam bentuk objek. Ini berbeda dari pemrograman prosedural yang lebih fokus pada sekumpulan instruksi yang diproses secara berurutan.
