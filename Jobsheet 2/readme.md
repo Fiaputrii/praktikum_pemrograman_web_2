@@ -138,20 +138,21 @@ $mahasiswa1->tampilkanData();
 ```
 
 # Output Class dan Object
-![Cuplikan layar 2024-09-10 125853](https://github.com/user-attachments/assets/b8a39188-19ac-4040-9061-8e5e558bd9b4)
 
+![Cuplikan layar 2024-09-11 214811](https://github.com/user-attachments/assets/0736076b-dd79-4237-89dd-b3f4fbdc3c5f)
 
 # Output Constructor
-![Cuplikan layar 2024-09-10 125903](https://github.com/user-attachments/assets/348177c6-5a84-42f1-b797-4d9255c702ff)
 
+![Cuplikan layar 2024-09-11 214820](https://github.com/user-attachments/assets/0f7ca5c7-0e68-4ad2-8d0b-22198edc298b)
 
 # Output Metode Tambahan
-![Cuplikan layar 2024-09-10 125917](https://github.com/user-attachments/assets/8deae540-bc6f-477a-8fd1-5df63dacc684)
 
+![Cuplikan layar 2024-09-11 215130](https://github.com/user-attachments/assets/b056f120-db72-47eb-a218-7d97a7be1975)
 
 # Output Atribut dan Metode
-![Cuplikan layar 2024-09-10 125930](https://github.com/user-attachments/assets/3315a5b4-23ab-4edd-bc7f-6cd133176122)
 
+![Cuplikan layar 2024-09-11 215141](https://github.com/user-attachments/assets/fc9199a6-b017-4674-9892-11e4e1e940b2)
 
 # Output Tugas 
-![Cuplikan layar 2024-09-10 125944](https://github.com/user-attachments/assets/217a92cd-053e-415e-9a12-d63a94ca1afc)
+
+![Cuplikan layar 2024-09-11 215150](https://github.com/user-attachments/assets/a414a29b-4cb1-4c34-89b3-d27072126087)
