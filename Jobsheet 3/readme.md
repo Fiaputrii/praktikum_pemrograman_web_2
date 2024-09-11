@@ -210,21 +210,7 @@ echo "Student ID: " . $student1->getStudentID() . "<br>";
 abstract class Course {
 ```
 
-- Membuat atribut (protected)
-
-```php
-protected $courseName;
-```
-
-- Membuat construct untuk menginisialisasi courseName
-
-```php
-public function __construct($courseName) {
-        $this->courseName = $courseName;
-    }
-```
-
-- Metode abstract
+- Membuat public function abstract
 
 ```php
 abstract public function getCourseDetails();
@@ -234,8 +220,16 @@ abstract public function getCourseDetails();
 
 ```php
 class OnlineCourse extends Course {
+    private $namaKursus;
+    private $platform;
+
+    public function setCourseDetails($namaKursus, $platform) {
+        $this->namaKursus = $namaKursus;
+        $this->platform = $platform;
+    }
+
     public function getCourseDetails() {
-        return "Online Course: " . $this->courseName . "<br>Platform: Goggle Meet";
+        return "Online Course: " . $this->namaKursus . " di platform " . $this->platform;
     }
 ```
 
@@ -243,23 +237,31 @@ class OnlineCourse extends Course {
 
 ```php
 class OfflineCourse extends Course {
+    private $namaKursus;
+    private $location;
+
+    public function setCourseDetails($namaKursus, $location) {
+        $this->namaKursus = $namaKursus;
+        $this->location = $location;
+    }
+
     public function getCourseDetails() {
-        return "Offline Course: " . $this->courseName . "<br>Location: Cafe";
+        return "Offline Course: " . $this->namaKursus . " lokasi di " . $this->location;
     }
 ```
 
-- Membuat objek Onlinecourse dan Offlinecourse
+- Instansiasi objek dari class Online course
 
 ```php
-$onlineCourse = new OnlineCourse("English");
-$offlineCourse = new OfflineCourse("Science");
+$onlineCourse = new OnlineCourse();
+$onlineCourse->setCourseDetails("Bahasa Korea", "Ruang Guru");
 ```
 
-- Menampilkan data
+- Instansiasi objek dari class Offlinecourse
 
 ```php
-echo $onlineCourse->getCourseDetails() . "<br>";
-echo $offlineCourse->getCourseDetails() . "<br>";
+$offlineCourse = new OfflineCourse();
+$offlineCourse->setCourseDetails("Fisika", "Cafe");
 ```
 
 <h3> Output Abstraction </h3>
