@@ -278,7 +278,7 @@ $offlineCourse->setCourseDetails("Fisika", "Cafe");
 
 <h3> Output Abstraction </h3>
 
-![Cuplikan layar 2024-09-11 232825](https://gith
+![Cuplikan layar 2024-09-11 232825](https://github.com/user-attachments/assets/c5d1b46d-294d-449e-803d-54189766b0a1)
 
 ub.com/user-attachments/assets/918d7233-06dd-40c7-a2cf-b5abce8f892f)
 <h2> Tugas </h2>
@@ -456,4 +456,4 @@ echo $jurnalMahasiswa->submitJurnal() . "<br>";
 
 <h3> Output Tugas 3 </h3>
 
-![Cuplikan layar 2024-09-11 104639](https://github.com/user-attachments/assets/461b3dec-00ab-4046-a14f-d443008b1b19)
+![Cuplikan layar 2024-09-11 232836](https://github.com/user-attachments/assets/a96a913a-67b0-45a8-b013-1b5a9f027f2d)
