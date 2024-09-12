@@ -289,9 +289,19 @@ ub.com/user-attachments/assets/918d7233-06dd-40c7-a2cf-b5abce8f892f)
 ```php
 class Person {
     protected $name;
+```
 
-    public function __construct($name) {
+```php
+
+- Membuat setname dan getname
+
+```php
+public function setName($name) {
         $this->name = $name;
+    }
+
+    public function getName() {
+        return $this->name;
     }
 ```
 
@@ -300,15 +310,7 @@ class Person {
 ```php
 // Metode Polymorphism getRole()
     public function getRole() {
-        return "Person";
-    }
-```
-
-- Membuat fungsi getName
-
-```php
-public function getName() {
-        return $this->name;
+        return "Peran: Person";
     }
 ```
 
@@ -318,14 +320,21 @@ public function getName() {
 class Dosen extends Person {
 ```
 
-- Membuat Atribut nidn dan membuat public function name, nidn
+- Membuat Atribut nidn
 
 ```php
 private $nidn;
+```
 
-    public function __construct($name, $nidn) {
-        parent::__construct($name);
+- Membuat getNidn dan setNidn (Encapsulation)
+
+```php
+public function setNidn($nidn) {
         $this->nidn = $nidn;
+    }
+
+    public function getNidn() {
+        return $this->nidn;
     }
 ```
 
@@ -333,20 +342,7 @@ private $nidn;
 
 ```php
 public function getRole() {
-        return "Dosen";
-    }
-```
-
-- Membuat setter dan getter untuk nidn
-
-```php
-// Getter dan Setter untuk NIDN (Encapsulation)
-    public function getNidn() {
-        return $this->nidn;
-    }
-
-    public function setNidn($nidn) {
-        $this->nidn = $nidn;
+        return "Peran: Dosen";
     }
 ```
 
@@ -356,45 +352,37 @@ public function getRole() {
 class Mahasiswa extends Person {
     private $nim;
 
-    public function __construct($name, $nim) {
-        parent::__construct($name);
+    public function setNim($nim) {
         $this->nim = $nim;
     }
 
-    // Override metode getRole untuk Polymorphism
-    public function getRole() {
-        return "Mahasiswa";
-    }
-
-    // Getter dan Setter untuk NIM (Encapsulation)
     public function getNim() {
         return $this->nim;
     }
 
-    public function setNim($nim) {
-        $this->nim = $nim;
+    // Override metode getRole untuk menampilkan peran mahasiswa
+    public function getRole() {
+        return "Peran: Mahasiswa";
     }
 ```
 
-- Membuat class abstract Jurnal , Atribut 
+- Membuat class abstract Jurnal
 
 ```php
 abstract class Jurnal {
-    protected $title;
 ```
 
-- Membuat public function untuk atribut title
+- Membuat public function abstract kelolaPengajuan
 
 ```php
-public function __construct($title) {
-        $this->title = $title;
-    }
+abstract public function kelolaPengajuan();
+}
 ```
 
-- Membuat metode abstrak untuk submitJurnal
+- Membuat class JurnalDosen yang mewarisi class Jurnal
 
 ```php
-abstract public function submitJurnal();
+class JurnalDosen extends Jurnal {
 ```
 
 - Membuat class JurnalDosen yang diwarisi dari class Jurnal
@@ -403,56 +391,55 @@ abstract public function submitJurnal();
 class JurnalDosen extends Jurnal {
 ```
 
-- Membuat Atribut dan fungsi construct untuk title, dan nidn
+- Membua public function kelolaPengajuan
 
 ```php
-private $nidn;
-
-    public function __construct($title, $nidn) {
-        parent::__construct($title);
-        $this->nidn = $nidn;
+public function kelolaPengajuan() {
+        return "Mengelola pengajuan jurnal dosen";
     }
 ```
 
-- Implementasi metode submitJurnal
-
-```php
-public function submitJurnal() {
-        return "Jurnal dengan judul '$this->title' telah diterima oleh Dosen dengan NIDN $this->nidn.";
-    }
-```
-
-- Membuat class JurnalMahasiswa dan langkah langkah nya sama dengan class JurnalDosen
+- Membuat class JurnalMahasiswa yang mewarisi Jurnal
 
 ```php
 class JurnalMahasiswa extends Jurnal {
-    private $nim;
+```
 
-    public function __construct($title, $nim) {
-        parent::__construct($title);
-        $this->nim = $nim;
-    }
+- Membuat public function kelolaPengajuan
 
-    // Implementasi metode submitJurnal
-    public function submitJurnal() {
-        return "Jurnal dengan judul '$this->title' telah diterima oleh Mahasiswa dengan NIM $this->nim. ";
+```php
+ public function kelolaPengajuan() {
+        return "Mengelola pengajuan jurnal mahasiswa";
     }
 ```
 
-- Contoh Pengguna
+- Membuat Objek Dosen, Mahasiswa, JurnalDosen, JurnalMahasiswa
 
 ```php
-$dosen = new Dosen("Bpk Sutrisno", "202101022");
-echo $dosen->getName() . " adalah seorang " . $dosen->getRole() . " dengan NIDN  " . $dosen->getNidn() . "<br>";
+$dosen = new Dosen();
+$dosen->setName("Bpk. Naufal");
+$dosen->setNidn("330202341");
 
-$mahasiswa = new Mahasiswa("Ferina", "230301031");
-echo $mahasiswa->getName() . " adalah seorang " . $mahasiswa->getRole() . " dengan NIM " . $mahasiswa->getNim() . "<br>";
+$mahasiswa = new Mahasiswa();
+$mahasiswa->setName("Ana Febri");
+$mahasiswa->setNim("230302001");
 
-$jurnalDosen = new JurnalDosen("Matematika Diskrit", $dosen->getNidn());
-echo $jurnalDosen->submitJurnal() . "<br>";
+$jurnalDosen = new JurnalDosen();
+$jurnalMahasiswa = new JurnalMahasiswa();
+```
 
-$jurnalMahasiswa = new JurnalMahasiswa("Hukum Newton", $mahasiswa->getNim());
-echo $jurnalMahasiswa->submitJurnal() . "<br>";
+- Menampilkan data
+
+```php
+echo $dosen->getName() . "<br>";
+echo $dosen->getNidn() . "<br>";
+echo $dosen->getRole() . "<br>";
+echo $jurnalDosen->kelolaPengajuan() . "<br><br>";
+
+echo $mahasiswa->getName() . "<br>";
+echo $mahasiswa->getNim() . "<br>";
+echo $mahasiswa->getRole() . "<br>";
+echo $jurnalMahasiswa->kelolaPengajuan() . "<br>";
 ```
 
 <h3> Output Tugas 3 </h3>
