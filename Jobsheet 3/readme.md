@@ -281,6 +281,7 @@ $offlineCourse->setCourseDetails("Fisika", "Cafe");
 ![Cuplikan layar 2024-09-11 232825](https://github.com/user-attachments/assets/c5d1b46d-294d-449e-803d-54189766b0a1)
 
 ub.com/user-attachments/assets/918d7233-06dd-40c7-a2cf-b5abce8f892f)
+
 <h2> Tugas </h2>
 
 - Membuat Class, Atribut (protected) dan menambahkan construct untuk menginisialisasi (name)
