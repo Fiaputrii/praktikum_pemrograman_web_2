@@ -1,6 +1,6 @@
 #  ✨ About Me ✨
 
-[![](https://img.shields.io/badge/Nama-Alifia_Putri_aditya-purple)](https://travis-ci.org/joemccann/dillinger)
+[![](https://img.shields.io/badge/Nama-Alifia_Putri_aditya-pink)](https://travis-ci.org/joemccann/dillinger)
 
 [![](https://img.shields.io/badge/Kelas-TI_2B-pink)](https://travis-ci.org/joemccann/dillinger)
 
