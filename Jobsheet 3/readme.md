@@ -291,8 +291,6 @@ class Person {
     protected $name;
 ```
 
-```php
-
 - Membuat setname dan getname
 
 ```php
