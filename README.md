@@ -1,10 +1,10 @@
 #  ✨ About Me ✨
 
-**Nama:** Alifia Putri Aditya
+[![](https://img.shields.io/badge/Nama-Alifia_Putri_aditya-purple)](https://travis-ci.org/joemccann/dillinger)
 
-**NPM:** 230302025
+[![](https://img.shields.io/badge/Kelas-TI_2B-pink)](https://travis-ci.org/joemccann/dillinger)
 
-**Kelas:** TI-2B
+[![](https://img.shields.io/badge/NIM-230302025-pink)](https://travis-ci.org/joemccann/dillinger)
 
 📫 How to reach me **alifiaputriditya@gmail.com**
 
